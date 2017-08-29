@@ -14,5 +14,9 @@
     "203011lena"
   ],
   "author": "Artem",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
