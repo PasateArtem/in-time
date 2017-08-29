@@ -1,0 +1,12 @@
+@import "base/index";
+@import "layout/index";
+@import "vendors/index";
+
+
+.container{
+  max-width: 980px ;
+  margin: 0 auto;
+  padding:0 10px; 
+  box-sizing: border-box;
+  background: none;
+}

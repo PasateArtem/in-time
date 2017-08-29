@@ -1,0 +1,164 @@
+.content{
+	.container{
+	    display: flex;
+	    justify-content: space-between;
+    }
+}
+
+section{
+	.list__page{
+		font-size: 11px;
+		font-family: Tahoma, Verdana, Segoe, sans-serif;
+		padding: 10px 0px 10px 0px;
+		a{
+			font-size: 11px;
+			font-family: Tahoma, Verdana, Segoe, sans-serif;
+			text-decoration: underline;
+            color: #7d7d7d;
+		}
+		em{
+			padding-left: 10px;
+			a{
+				text-decoration: none;
+				color: #7d7d7d;
+			}
+		}
+	}
+	.annet__watch{
+		padding-bottom: 40px;
+		p{
+			font-size: 12px;
+		    font-family: Tahoma, Verdana, Segoe, sans-serif;
+		    color: #000;
+		}
+		h1{
+			font-size: 28px;
+		    font-family: Tahoma, Verdana, Segoe, sans-serif;
+		    color: #000;
+		    padding: 25px 0px 25px 0px;
+		}
+		img{
+			min-width: 100%;
+			height: auto;
+			padding: 5px 0px 5px 0px;
+		}
+	}
+	.price__watch{
+		border-bottom: 1px dashed #ccc;
+		padding-bottom: 20px;
+		h3{
+			font-size: 18px;
+		    font-family: Tahoma, Verdana, Segoe, sans-serif;
+		    color: #000;
+		    padding: 10px 0px 10px 0px
+		}
+		p{
+			font-size: 12px;
+		    font-family: Tahoma, Verdana, Segoe, sans-serif;
+		    color: #000;
+		}
+        ul{
+        	li{
+        	 padding-top: 20px;
+        	 display: flex;
+        		p{
+        			font-size: 12px;
+		            font-family: Tahoma, Verdana, Segoe, sans-serif;
+		            color: #ccc;
+        		}
+        		a{
+        		    font-size: 12px;
+			        font-family: Tahoma, Verdana, Segoe, sans-serif;
+			        text-decoration: underline;
+                    color: #24b5e1;
+                    margin-left: 10px;
+        		}
+        	}
+        }
+	}
+	.images__watch{
+        	padding-top: 25px;
+        	border-bottom: 1px dashed #ccc;
+		    padding-bottom: 20px;
+        	h4{
+        		padding: 10px 0px 10px 0px;
+        		font-size: 12px;
+		        font-family: Tahoma, Verdana, Segoe, sans-serif;
+		        color: #000;
+        	}
+        	.boxwatch{
+        		 display: flex;
+                 justify-content: space-between;
+                 padding-bottom: 15px;
+                 img{
+                 	max-width: 100%;
+                 	height: auto;
+                 }
+        	}
+        	p{
+        		padding: 10px 0px 10px 0px;
+        		font-size: 12px;
+		        font-family: Tahoma, Verdana, Segoe, sans-serif;
+		        color: #000;
+        	}
+            .list{
+            	padding: 5px 0px 5px 0px;
+            	li{
+            		padding: 5px 0px 5px 0px;
+            		em{
+            			font-size: 12px;
+		                font-family: Tahoma, Verdana, Segoe, sans-serif;
+		                color: #000;
+            		}
+            	}
+            }
+        }
+        .table-size{
+        	padding-bottom: 40px;
+        	border-bottom: 1px dashed #ccc;
+        	h4{
+        		padding: 20px 0px 10px 0px;
+        		font-size: 12px;
+		        font-family: Tahoma, Verdana, Segoe, sans-serif;
+		        color: #000;
+        	}
+        	.light{
+        		background: #f9f9f9;
+        	}
+
+        	th{
+        		    padding: 5px 70px 15px 10px;
+        		    font-size: 11px;
+		            font-family: Tahoma, Verdana, Segoe, sans-serif;
+		            color: #7d7d7d;
+        	}
+        	td{
+        		    padding: 5px 5px 10px 10px;
+        		    font-size: 11px;
+		            font-family: Tahoma, Verdana, Segoe, sans-serif;
+		            color: #000;
+        		    em{
+                        color: #59c7e7;
+                        font-size: 11px;
+		                font-family: Tahoma, Verdana, Segoe, sans-serif;
+        		    }
+        		    a{
+        		    	color: #59c7e7;
+                        font-size: 11px;
+		                font-family: Tahoma, Verdana, Segoe, sans-serif;
+		                text-decoration: underline;
+        		    }
+        	}
+        }
+        .tab-watch{
+        	padding-bottom: 75px;
+        	border-bottom: 1px dashed #ccc;
+        	h4{
+        		padding: 20px 0px 10px 0px;
+                font-size: 12px;
+		        font-family: Tahoma, Verdana, Segoe, sans-serif;
+		        color: #000;
+        	}
+        	
+        }
+    }
