@@ -1,0 +1,18 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "new",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "pasateartem"
+  },
+  "keywords": [
+    "203011lena"
+  ],
+  "author": "Artem",
+  "license": "ISC"
+}
