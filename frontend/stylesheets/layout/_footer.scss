@@ -1,10 +1,14 @@
 footer{
 	padding-top: 30px;
+	padding-bottom: 20px;
 	.container{
+		border-top: 1px dashed #ccc;
+		padding-top: 10px;
 	    display: flex;
         justify-content: space-between;
         .copyright{
         	display: flex;
+        	align-self: center;
         	p{
         		color: #7c7c7c;
         		font-size: 11px;
