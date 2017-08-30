@@ -1,0 +1,36 @@
+footer{
+	padding-top: 30px;
+	.container{
+	    display: flex;
+        justify-content: space-between;
+        .copyright{
+        	display: flex;
+        	p{
+        		color: #7c7c7c;
+        		font-size: 11px;
+        		font-family: 'Conv_Tahoma-Regular';	
+        	}
+        	a{
+        		color: #59c7e7;
+                font-size: 11px;
+		        font-family: 'Conv_Tahoma-Regular';
+		        text-decoration: underline;
+		        padding-left: 3px;
+        	}
+        }
+        .social-link{
+        	li{
+        		border-radius: 60px 60px 60px 60px;
+        		background: #ccc;
+        		display: inline-block;
+        		width: 30px;
+                height: 30px;
+        		i{
+        			color: #fff;
+        			font-size: 15px;
+                    padding: 9px;
+        		}
+        	}
+        }
+	}
+}

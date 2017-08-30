@@ -1,13 +1,13 @@
 .tabs {
 	min-width: 320px;
 	max-width: 800px;
-	padding: 0px;
+	padding: 20px 0px 0px 0px;
 	margin: 0 auto;
 }
 /* Стили секций с содержанием */
 .tabs>section {
 	display: none;
-	padding: 15px 0px 0px 0px;
+	padding: 12px 0px 0px 0px;
 	background: #fff;
 	// border: 1px solid #ddd;
 }
@@ -51,7 +51,7 @@
 .tabs>label {
 	display: inline-block;
 	margin: 0 0 -1px;
-	padding: 15px 25px;
+	padding: 12px 15px;
 	font-weight: 600;
 	text-align: center;
     font-size: 11px;
@@ -118,3 +118,4 @@
 		padding: 15px;
 	}
 }
+
