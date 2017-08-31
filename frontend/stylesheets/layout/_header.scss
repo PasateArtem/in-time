@@ -1,34 +1,48 @@
 .top__section{
-	display: flex;
-	justify-content: space-between;
+	width: 100%;
 	padding: 29px 0px 29px 0px;
 	.logo{
+		display: inline-block;
 	    color: #24b5e1;
 	    font-size: 45px;
 	    font-family: 'Conv_bauhauslightctt';
     }
     .phone{
-    	display: flex;
-        align-items: center;
+    	float: right;
+        padding-top: 26px;
+        overflow: hidden;
         img{
         	max-width: 100%;
         	height: auto;
         	margin-top: -11px;
             margin-right: 8px;
+            float: left;
         }
         p{
         	font-size: 17px;
         	font-family: Arial;
         	padding: 0px;
+        	float: right;
         }
     }
 }
 .bottom__section{
 	background: #f2f2f2;
 	.nav__list{
-		display: flex;
-		justify-content: space-between;
 		padding: 15px 0px 10px 0px;
+		.left{
+			width: 20%;
+            float: left;
+            padding: 0px 35px 0px 0px;
+		}
+		.center{
+			display: inline-block;
+		}
+		.right{
+			width: 21%;
+            float: right;
+            text-align: right;
+		}
 		a{
 			font-family: Arial;
 			font-size: 15px;

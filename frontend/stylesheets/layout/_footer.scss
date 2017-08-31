@@ -1,18 +1,18 @@
-footer{
+.footer{
 	padding-top: 30px;
 	padding-bottom: 20px;
+    clear: both;
 	.container{
 		border-top: 1px dashed #ccc;
 		padding-top: 10px;
-	    display: flex;
-        justify-content: space-between;
         .copyright{
-        	display: flex;
-        	align-self: center;
+        	display: inline-block;
+            overflow: hidden;
         	p{
         		color: #7c7c7c;
         		font-size: 11px;
         		font-family: 'Conv_Tahoma-Regular';	
+                float: left;
         	}
         	a{
         		color: #59c7e7;
@@ -20,9 +20,11 @@ footer{
 		        font-family: 'Conv_Tahoma-Regular';
 		        text-decoration: underline;
 		        padding-left: 3px;
+                float: right;
         	}
         }
         .social-link{
+            float: right;
         	li{
         		border-radius: 60px 60px 60px 60px;
         		background: #ccc;
