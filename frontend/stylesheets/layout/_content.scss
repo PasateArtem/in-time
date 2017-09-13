@@ -1,13 +1,22 @@
 .content{
-	.container{
-	    width: 100%;
-    }
+	width: 100%;
+    margin: 0 auto;
+    height: auto !important;
 }
+.content:after{
+   content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0; 
+}
+    
 
 .main{
     width: 69%;
     display: inline-block;
     float: left;
+    margin-right: 0px;
 	.list__page{
 		font-size: 11px;
 		font-family: 'Conv_Tahoma-Regular';
@@ -18,6 +27,9 @@
 			text-decoration: underline;
             color: #7d7d7d;
 		}
+        a:hover{
+            color: #24b5e1;
+        }
 		em{
 			padding-left: 18px;
 			a{
@@ -78,6 +90,9 @@
                     color: #24b5e1;
                     margin-left: 10px;
         		}
+                a:hover{
+                    color: #08e4e4;
+                }
         	}
         }
 	}
@@ -97,7 +112,7 @@
                  img{
                  	max-width: 100%;
                  	height: auto;
-                    padding: 0px 10px 0px 0px;
+                    padding: 10px 10px 0px 0px;
                     float: left;
                  }
         	}
@@ -172,19 +187,24 @@
     .sidebar{
         padding: 66px 0px 0px 10px;
         width: 24%;
-        display: inline-block;
+        margin-left: 58px;
         position: relative;
-        left: 66px;
+        float: left;
         .top_form{
             padding-bottom: 28px;
             input{
                 background: url(../img/search.png);
                 background-repeat: no-repeat;
-                background-position: 209px;
-                width: 219px;
+                background-position: 100%;
+                width: 93%;
                 border: 1px solid #ccc;
                 padding: 5px;
                 border-radius: 4px;
+            }
+            input:hover{
+                background-color: rgba(87, 89, 103, 0.2);
+                background: rgba(87, 89, 103, 0.2);
+                color: rgba(87, 89, 103, 0.2);
             }
         }
         h2{
@@ -197,8 +217,7 @@
            .sidebar__news-one,
            .sidebar__news-two,
            .sidebar__news-three{
-            display: flex;
-            flex-direction: column;
+            display: block;
             padding: 21px 0px 15px 0px;
             border-bottom: 1px dashed #ccc; 
             a{
@@ -206,12 +225,17 @@
                 font-size: 14px;
                 font-family: 'Conv_Tahoma-Regular';
                 text-decoration: underline;
+                
+            }
+            a:hover{
+                    color: #08e4e4;
             }
             em{
                color: #969696;
                font-size: 11px;
                font-family: 'Conv_Tahoma-Regular';
-               padding: 10px 0px 13px 0px; 
+               padding: 10px 0px 13px 0px;
+               display: block; 
             }
             p{
                color: #000;
@@ -229,9 +253,9 @@
             }
             .sidebar__subscription-form{
                     padding: 21px 0px 20px 0px;
-                    position: relative;
+                    text-align: right;
                 input{
-                    width: 227px;
+                    width: 93%;
                     border: 1px solid #ccc;
                     padding: 7px;
                     border-radius: 4px;
@@ -240,9 +264,14 @@
                     font-size: 11px;
                     font-family: 'Conv_Tahoma-Regular';
                 }
+                input:hover{
+                    background-color: rgba(87, 89, 103, 0.2);
+                    background: rgba(87, 89, 103, 0.2);
+                    color: rgba(87, 89, 103, 0.2);
+                }
                 button{
-                    position: absolute;
-                    left: 124px;
+                    
+                   
                     background: #24b5e1;
                     color: #fff;
                     font-family: 'Conv_Tahoma-Regular';
@@ -251,8 +280,87 @@
                     border-radius: 6px;
                     padding: 5px;
                     width: 114px;
-                    top: 116px;
+                    
+                }
+                button:hover{
+                    background: #97e1f7;
                 }
             }
         }
     }
+@media screen and (max-width: 985px) and (min-width: 100px){
+    .content{
+        .main{
+            width: 69%;
+            float: left;
+            .table-size{
+                th{
+                    padding: 5px 32px 15px 9px;
+                }
+            }
+        }
+        .sidebar{
+            margin-left: 5%;
+            float: left;
+            width: 24%;
+
+        }
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 100px){
+    .content{
+        .main{
+            width: 100%;
+            float: none;
+            margin-right: 0px;
+            // padding: 0px 5px 0px 5px;
+            .annet__watch{
+                img{
+                    padding: 0;
+                }
+            }
+            .tab-watch{
+                padding-bottom: 25px;
+            }
+        }
+        .sidebar{
+            margin-left: 0px;
+            margin-top: 25px;
+            float: none;
+            width: 100%;
+            padding: 0px;
+            text-align: center;
+            .sidebar__subscription{
+                .sidebar__subscription-form{
+                    text-align: center;
+                }
+            }
+            .sidebar__news{
+                padding: 0px 0px 30px 0px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 100px){
+    .content{
+        .main{
+            .table-size{
+                th{
+                    padding: 5px 13px 15px 0px;
+                    font-size: 9px;
+                }
+                td{
+                    padding: 5px 8px 10px 0px;
+                    font-size: 9px;
+                    em{
+                        font-size: 9px;
+                    }
+                    a{
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+        
+    }
+}    

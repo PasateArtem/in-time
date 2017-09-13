@@ -3,13 +3,17 @@
 	padding: 29px 0px 29px 0px;
 	.logo{
 		display: inline-block;
+		a{
+
 	    color: #24b5e1;
 	    font-size: 45px;
 	    font-family: 'Conv_bauhauslightctt';
+		}
+		
     }
     .phone{
     	float: right;
-        padding-top: 26px;
+        padding-top: 22px;
         overflow: hidden;
         img{
         	max-width: 100%;
@@ -28,25 +32,91 @@
 }
 .bottom__section{
 	background: #f2f2f2;
+	#menu-checkbox {
+        display: none;
+    }
+    .toggle-button {
+        text-align: center;
+        display: none;
+        cursor: pointer;
+        font-size: 17px;
+        font-family: Arial;
+    }
+    .toggle-button:hover{
+		color: #24b5e1;
+	}
+    .toggle-button:after {
+        content: attr(data-open);
+        display: block;
+        padding: 10px 30px;
+    }
+    .toggle-button:after:hover{
+		color: #24b5e1;
+	}
+    #menu-checkbox:checked + nav[role="navigation"] .nav__list {
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+        content: attr(data-close);
+    }
 	.nav__list{
 		padding: 15px 0px 10px 0px;
+		
 		.left{
 			width: 20%;
             float: left;
             padding: 0px 35px 0px 0px;
+            border: none;
 		}
 		.center{
 			display: inline-block;
+			border: none;
 		}
 		.right{
 			width: 21%;
             float: right;
             text-align: right;
+            border: none;
 		}
 		a{
 			font-family: Arial;
 			font-size: 15px;
             color: #000;
 		}
+		a:hover{
+			color: #24b5e1;
+		}
 	}
+}
+@media only screen and (max-width: 768px) {
+    .bottom__section{
+    	.toggle-button {
+            /* label скрыт */
+           display: block;
+        }
+        .nav__list {
+            display: none;
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgba(110, 68, 75, 0.1);
+            background: rgba(110, 68, 75, 0.1);
+            padding-bottom: 53px;
+            padding: 0px 0px 53px 0px;
+            .left,
+            .center,
+            .right{
+               display: inline-block;
+               width: 100%;
+               padding: 0px;
+               text-align: center;
+               a{
+                   width: 100%;
+                   border-top: 1px solid #ccc;
+                   display: block;
+                   padding: 5px 0px 5px 0px;
+
+               }
+            }  
+        }
+    }     
 }

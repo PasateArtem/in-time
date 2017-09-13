@@ -1,0 +1,56 @@
+#menu-checkbox {
+  /* чекбокс скрыт */
+  display: none;
+}
+// .nav__list {
+//   /* пункты меню скрыты */
+//   display: none;
+//   padding: 0;
+//   margin: 0;
+// }
+// .toggle-button {
+//   text-align: center;
+//   display: block;
+//   /* не забываем явно указать каким должен быть курсор */
+//   cursor: pointer;
+//   background-color: #333;
+//   color: #fff;
+// }
+// .toggle-button:after {
+//   /* получаем данные из атрибута data-open в html */
+//   content: attr(data-open);
+//   display: block;
+//   margin: 10px 0;
+//   padding: 10px 30px;
+// }
+// #menu-checkbox:checked + nav[role="navigation"] .nav__list {
+//   /* когда чекбокс активен меню становится видимым */
+//   display: block;
+// }
+// #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+//   content: attr(data-close);
+// }
+// @media only screen and (min-width: 640px) {
+//     .toggle-button {
+//       /* label скрыт */
+//       display: none;
+//     }
+    
+//       .nav__list {
+//       display: block;
+//       margin: 0 auto;
+//       height: 30px;
+//       text-align: center;
+//       .left,
+//       .center,
+//       .right{
+//         display: inline-block;
+//         border-top: 1px solid #ccc;
+//         width: 100%;
+//       }
+//     }
+  
+    
+
+// }
+  

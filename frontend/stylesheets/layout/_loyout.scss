@@ -103,7 +103,8 @@
  
 @media screen and (max-width: 680px) {
 	.tabs>label {
-		font-size: 0;
+		font-size: 11;
+		padding: 10px;
 	}
 	.tabs>label:before {
 		margin: 0;
@@ -115,7 +116,7 @@
 */
 @media screen and (max-width: 400px) {
 	.tabs>label {
-		padding: 15px;
+		padding: 10px;
 	}
 }
 

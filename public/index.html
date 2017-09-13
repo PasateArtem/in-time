@@ -4,31 +4,34 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<script src="js/require.js" data-main="js/index"></script>
 	<title>frontend</title>
 </head>
 <body>
 	<div class="wrapper">
 	<header class="header">
-	<div class="container">
-		<div class="top__section">
-			<div class="logo"><em>In time</em></div>
-            <div class="phone"><img src="img/mobil.png" alt=""><p>066 12 577 654</p></div>
-		</div>
-	</div>
-	<div class="bottom__section">
 	    <div class="container">
-		    <div class="bottom__section-nav">
-			<ul class="nav__list">
-				<li class="left"><a href="#">Каталог товаров</a></li>
-				<li class="left"><a href="#">Новинки</a></li>
-				<li class="center"><a href="#">Подарки</a></li>
-				<li class="right"><a href="#">Контакты</a></li>
-				<li class="right"><a href="#">Распродажа</a></li>
-			</ul>
+		    <div class="top__section">
+			    <div class="logo"><a href="#"><em>In time</em></a></div>
+                <div class="phone"><img src="img/mobil.png" alt=""><p>066 12 577 654</p></div>
 		    </div>
 	    </div>
-	</div>	
+	    <div class="bottom__section">
+	        <div class="container">
+	    	    	<input type="checkbox" id="menu-checkbox" />
+		            <nav role="navigation">
+		                <label for="menu-checkbox" class="toggle-button" data-open="Меню" data-close="Меню" onclick></label>
+			          <ul class="nav__list">
+				      <li class="left"><a href="#">Каталог товаров</a></li>
+				      <li class="left"><a href="#">Новинки</a></li>
+				      <li class="center"><a href="#">Подарки</a></li>
+				      <li class="right"><a href="#">Контакты</a></li>
+				      <li class="right"><a href="#">Распродажа</a></li>
+			          </ul>
+		            </nav>
+	            </div>
+	        </div>   
 	</header>
 	<div class="content">
 		<div class="container">
@@ -150,8 +153,8 @@
 				<div class="sidebar__subscription">
 					<h2>Подписка</h2>
 					<form class="sidebar__subscription-form" action="">
-						<input type="text" value="Имя">
-						<input type="email" value="Email">
+						<input type="text" placeholder="Имя">
+						<input type="email" placeholder="Email">
 						<button>Подписаться</button>
 					</form>
 				</div>
@@ -166,9 +169,9 @@
 		    </div>
 		    <div class="social-link">
 		    	<ul>
-		    		<li><i class="fa fa-skype" aria-hidden="true"></i></li>
-		    		<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-		    		<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+		    		<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+		    		<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></a></i></li>
+		    		<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 		    	</ul>
 		    </div>
 		</div>

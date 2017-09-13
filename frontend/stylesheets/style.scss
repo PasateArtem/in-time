@@ -2,11 +2,14 @@
 @import "layout/index";
 @import "vendors/index";
 
-
+// .wrapper{
+// 	    padding: 0 2px;
+// }
 .container{
-  max-width: 980px ;
+  width: 100%;
+  max-width: 985px ;
   margin: 0 auto;
-  padding:0 0px; 
+  padding:0 5px; 
   box-sizing: border-box;
   background: none;
 }
