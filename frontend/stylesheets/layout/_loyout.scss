@@ -9,7 +9,7 @@
 	display: none;
 	padding: 12px 0px 0px 0px;
 	background: #fff;
-	// border: 1px solid #ddd;
+	border-top: 1px solid #59c7e7;
 }
 .tabs>section>p {
 	margin: 0 0 5px;
@@ -50,9 +50,9 @@
 /* Стили переключателей вкладок (табов) */
 .tabs>label {
 	display: inline-block;
-	margin: 0 0 -1px;
+	margin: 0 0 0px;
 	padding: 12px 15px;
-	font-weight: 600;
+	font-weight: 400;
 	text-align: center;
     font-size: 11px;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
