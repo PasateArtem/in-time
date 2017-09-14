@@ -10,13 +10,17 @@ var logger = require('gulp-logger');
 var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');
 
-gulp.task('serve', ['sass'], function() {
+
+gulp.task('watch', ['sass'], function() {
     browserSync.init({
         server: "./public",
         port: 3010
     });
+    
     gulp.watch('./frontend/stylesheets/**/*.scss', ['sass']);
     gulp.watch('./frontend/javascripts/**/*.js', ['public']);
+    gulp.watch('./public/index.html', browserSync.reload);
+    gulp.watch('./public/**/*.js', browserSync.reload);
 });
 
 gulp.task('main-bower-files',  function() {
@@ -24,7 +28,8 @@ gulp.task('main-bower-files',  function() {
         .pipe(mainBowerFiles(['**/*.js']))
         .pipe(flatten())
         .pipe(logger())
-        .pipe(gulp.dest('./frontend/javascripts'));
+        .pipe(gulp.dest('./frontend/javascripts'))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('sass', function () {
@@ -46,17 +51,23 @@ gulp.task('images', function(){
   .pipe(gulp.dest('./public/images'));
 })
 
-gulp.task('fonts', function(){
+gulp.task('fonts', function () {
  return gulp.src(['./frontend/fonts/*.eot', './frontend/fonts/*.svg', './frontend/fonts/*.ttf', './frontend/fonts/*.woff'])
   .pipe(gulp.dest('./public/fonts'));
 })
 
-gulp.task('public', ['main-bower-files'], function(){
+gulp.task('public', ['main-bower-files'], function () {
     return gulp.src('./frontend/javascripts/*.js')
-    .pipe(gulp.dest('./public/js'));
+    .pipe(gulp.dest('./public/*.js'));
 });
-gulp.task('icons', function() { 
+gulp.task('icons', function () { 
     return gulp.src(config.bowerDir + './fontawesome/fonts/**.*') 
         .pipe(gulp.dest('./public/fonts')); 
 });
-gulp.task('default', ['serve', 'public', 'images', 'fonts']);
+
+gulp.task('html', function () {
+  gulp.src('./pablic/*.html')
+  .pipe(browserSync.stream());
+});
+
+gulp.task('default', ['watch', 'public', 'images', 'fonts', 'html', 'sass', 'main-bower-files']);
