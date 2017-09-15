@@ -32,7 +32,7 @@
             color: #24b5e1;
         }
 		em{
-			padding-left: 18px;
+			padding-left: 3px;
 			a{
 				text-decoration: none;
 				color: #7d7d7d;
@@ -110,12 +110,17 @@
         	.boxwatch{
         		 overflow: hidden;
                  padding-bottom: 11px;
-                 img{
-                 	max-width: 100%;
-                 	height: auto;
-                    padding: 10px 8px 0px 0px;
-                    float: left;
+                 div{
+                    display: inline-block;
+                    width: 219px;
+                    height: auto;
+                    img{
+                    max-width: 100%;
+                    height: auto;
+                    
                  }
+                 }
+                 
         	}
         	p{
         		padding: 10px 0px 10px 0px;
@@ -159,7 +164,7 @@
 		            color: #7d7d7d;
         	}
         	td{
-        		    padding: 5px 14px 10px 10px;
+        		    padding: 10px 14px 10px 10px;
         		    font-size: 11px;
 		            font-family: 'Conv_Tahoma-Regular';
 		            color: #000;
@@ -194,17 +199,32 @@
         float: left;
         .top_form{
             padding-bottom: 28px;
+            position: relative;
             input{
-                background: url(../img/search.png);
-                background-repeat: no-repeat;
-                background-position: 95%;
-                width: 93%;
+                color: #969696;
+                font-size: 11px;
+                font-family: 'Conv_Tahoma-Regular';
+                width: 82%;
                 border: 1px solid #ccc;
-                padding: 5px;
+                padding: 5px 27px 5px 5px;
                 border-radius: 4px;
+            }
+            .find{
+               width: 11px;
+               position: absolute;
+               border: none;
+               padding: 7px;
+               right: 12px;
+               top: 0px;
+               
+            }
+            .find:focus{
+                border: none;
+                outline: none;
             }
             input:focus{
                 border: 1px solid #59c7e7;
+                outline: none;
             }
         }
         h2{
@@ -217,33 +237,32 @@
            .sidebar__news-one,
            .sidebar__news-two,
            .sidebar__news-three{
-            display: block;
-            padding: 21px 0px 15px 0px;
-            border-bottom: 1px dashed #ccc; 
-            a{
-                color: #59c7e7;
-                font-size: 14px;
-                font-family: 'Conv_Tahoma-Regular';
-                text-decoration: underline;
-                
-            }
-            a:hover{
+                display: block;
+                padding: 21px 0px 15px 0px;
+                border-bottom: 1px dashed #ccc; 
+                a{
+                    color: #59c7e7;
+                    font-size: 14px;
+                    font-family: 'Conv_Tahoma-Regular';
+                    text-decoration: underline;    
+                }
+                a:hover{
                     color: #08e4e4;
+                }
+                em{
+                    color: #969696;
+                    font-size: 11px;
+                    font-family: 'Conv_Tahoma-Regular';
+                    padding: 10px 0px 13px 0px;
+                    display: block; 
+                }
+                p{
+                    color: #000;
+                    font-size: 11px;
+                    font-family: 'Conv_Tahoma-Regular';
+                    line-height: 18px;
+                }
             }
-            em{
-               color: #969696;
-               font-size: 11px;
-               font-family: 'Conv_Tahoma-Regular';
-               padding: 10px 0px 13px 0px;
-               display: block; 
-            }
-            p{
-               color: #000;
-               font-size: 11px;
-               font-family: 'Conv_Tahoma-Regular';
-               line-height: 18px;
-            }
-           }
         }
         .sidebar__subscription{
             h2{
@@ -252,8 +271,8 @@
                color: #000; 
             }
             .sidebar__subscription-form{
-                    padding: 21px 0px 20px 0px;
-                    text-align: right;
+                padding: 21px 0px 20px 0px;
+                text-align: right;
                 input{
                     width: 93%;
                     border: 1px solid #ccc;
@@ -273,8 +292,7 @@
                     font-family: 'Conv_Tahoma-Regular';
                 }
                 button{
-                    
-                   
+                    cursor: pointer;
                     background: #24b5e1;
                     color: #fff;
                     font-family: 'Conv_Tahoma-Regular';
@@ -282,8 +300,7 @@
                     border: 1px solid #24b5e1;
                     border-radius: 6px;
                     padding: 5px;
-                    width: 114px;
-                    
+                    width: 114px;   
                 }
                 button:hover{
                     background: #97e1f7;
@@ -316,7 +333,6 @@
             width: 100%;
             float: none;
             margin-right: 0px;
-            // padding: 0px 5px 0px 5px;
             .annet__watch{
                 img{
                     padding: 0;
@@ -333,6 +349,11 @@
             width: 100%;
             padding: 0px;
             text-align: center;
+            .top_form{
+                .find{
+                    right: 48px;
+                }
+            }
             .sidebar__subscription{
                 .sidebar__subscription-form{
                     text-align: center;
@@ -354,7 +375,6 @@
                    display: block;
                    width: 350px;
                 }
-
                 th{
                     padding: 5px 13px 15px 0px;
                     font-size: 9px;
@@ -366,12 +386,28 @@
                         font-size: 9px;
                     }
                     a{
-                        font-size: 9px;
-                        
+                        font-size: 9px;     
                     }
                 }
             }
         }
-        
+        .sidebar{
+            .top_form{
+                .find{
+                    right: 43px;
+                }
+            }
+        }   
+    }
+}
+@media screen and (max-width: 400px) and (min-width: 100px){
+    .content{
+        .sidebar{
+            .top_form{
+                .find{
+                    right: 20px;
+                }
+            }
+        }
     }
 }    

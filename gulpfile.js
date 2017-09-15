@@ -28,7 +28,7 @@ gulp.task('main-bower-files',  function() {
         .pipe(mainBowerFiles(['**/*.js']))
         .pipe(flatten())
         .pipe(logger())
-        .pipe(gulp.dest('./frontend/javascripts'))
+        .pipe(gulp.dest('./frontend/javascript'))
         .pipe(browserSync.stream());
 });
 
@@ -57,8 +57,8 @@ gulp.task('fonts', function () {
 })
 
 gulp.task('public', ['main-bower-files'], function () {
-    return gulp.src('./frontend/javascripts/*.js')
-    .pipe(gulp.dest('./public/*.js'));
+    return gulp.src('./frontend/javascript/*.js')
+    .pipe(gulp.dest('./public/js'));
 });
 gulp.task('icons', function () { 
     return gulp.src(config.bowerDir + './fontawesome/fonts/**.*') 
